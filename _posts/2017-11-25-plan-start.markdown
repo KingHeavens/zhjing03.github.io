@@ -1,5 +1,5 @@
 ---
-layout:     keynote
+layout:     post
 title:      "learn plan"
 subtitle:   "做一个Android学习计划"
 date:       2015-01-29 12:00:00
@@ -9,7 +9,7 @@ tags:
     - plan
 ---
 
-> “Yeah It's on. ”
+> “go go go”
 
 #目标
 ###。。
