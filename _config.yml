@@ -1,10 +1,10 @@
 # Site settings
 title: JING's blog
-SEOTitle: jing | blog | zhjing03
+SEOTitle: jing | blog | 京 | 京美
 header-img: img/home-bg.jpg
 email: zhjing03@126.com
-description: "jing's blog, learn from now."
-keyword: "jing's blog, Android"
+description: "jing's blog。bug maker!"
+keyword: "Android"
 url: "http://jingmei.info"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -16,7 +16,7 @@ weibo_username:     NotFoundException
 zhihu_username:     NotFoundException
 github_username:    zhjing03
 #twitter_username:  NotFoundException
-facebook_username:  NotFoundException
+facebook_username:  翟京
 
 
 
@@ -50,7 +50,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+duoshuo_username: jing
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -68,7 +68,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "a little Android&java knowledge"
+sidebar-about-description: "a bug maker"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -85,16 +85,16 @@ friends: [
         title: "Hux Blog",
         href: "http://huangxuan.me"
     },{
-        title: "Foo",
+        title: "NO",
         href: "#"
     },{
-        title: "Bar",
+        title: "Friends",
         href: "#"
     },{
-        title: "Example Friends",
+        title: "Exception",
         href: "#"
     },{
-        title: "It helps SEO",
+        title: "--",
         href: "#"
     }
 ]
