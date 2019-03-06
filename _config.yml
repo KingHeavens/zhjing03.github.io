@@ -1,9 +1,9 @@
 # Site settings
-title: JING's blog
-SEOTitle: jing | blog | 京 | 京美
+title: Aaron's blog
+SEOTitle: Aaron | Android | 京
 header-img: img/home-bg.jpg
 email: zhjing03@126.com
-description: "jing's blog。bug maker!"
+description: "Start now!"
 keyword: "Android"
 url: "http://jingmei.info"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
@@ -68,7 +68,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "a bug maker"
+sidebar-about-description: ""
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
