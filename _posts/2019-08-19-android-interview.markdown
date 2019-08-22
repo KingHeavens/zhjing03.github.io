@@ -136,6 +136,10 @@ tags:
 
 [再谈Android AsyncTask的优缺点](https://www.cnblogs.com/yanyojun/p/6414919.html)
 
+#### 5、并发集合
+
+ConcurrentHashMap的实现原理
+
 ### 三、内存&优化
 
 #### 1、LRUCache
@@ -220,7 +224,13 @@ tags:
 
 [理解Http请求与响应](https://www.jianshu.com/p/51a61845e66a#)
 
-#### 2、OkHttp
+#### 2、Cookie、Session、token
+
+https://www.cnblogs.com/wxinyu/p/9154178.html
+
+https://www.zybuluo.com/Dukebf/note/856502
+
+#### 3、OkHttp
 
 [Okio深入分析——基础使用部分](https://www.jianshu.com/p/3e0935bf2d45)
 
@@ -274,9 +284,13 @@ tags:
 
 [Android自定义View之requestLayout方法和invalidate方法](https://www.jianshu.com/p/a6ea264a07b8)
 
+[为什么你的自定义View wrap_content不起作用？](https://blog.csdn.net/carson_ho/article/details/62037760)
+
 #### 2、View绘制生命周期
 
 [Android View与Activity生命周期的关系](https://www.jianshu.com/p/88054f481f17)
+
+[View.post()](https://www.cnblogs.com/dasusu/p/8047172.html)
 
 #### 3、事件分发机制
 
@@ -288,7 +302,11 @@ tags:
 
 [android中的事件传递和处理机制](https://www.cnblogs.com/fuly550871915/p/4983682.html)
 
-#### 4、RecyclerView相关
+#### 4、动画
+
+[Android：手把手带你全面了解 动画的原理&使用](https://juejin.im/entry/5acabe416fb9a028dc414c6d)
+
+#### 5、RecyclerView相关
 
 [Android 控件 RecyclerView](https://www.jianshu.com/p/4f9591291365)
 
@@ -320,83 +338,86 @@ tags:
 
 #### 2、模块化、组件化
 
-### 十、设计模式
+### 十、设计
+
+#### 0、uml
+
+https://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html
 
 #### 1、MVC、MVP、MVVM
 
 [选择恐惧症的福音！教你认清MVC，MVP和MVVM]([http://zjutkz.net/2016/04/13/%E9%80%89%E6%8B%A9%E6%81%90%E6%83%A7%E7%97%87%E7%9A%84%E7%A6%8F%E9%9F%B3%EF%BC%81%E6%95%99%E4%BD%A0%E8%AE%A4%E6%B8%85MVC%EF%BC%8CMVP%E5%92%8CMVVM/](http://zjutkz.net/2016/04/13/选择恐惧症的福音！教你认清MVC，MVP和MVVM/))
 
+[MVC、MVP、MVVM，我到底该怎么选？](https://juejin.im/post/5b3a3a44f265da630e27a7e6)
+
+[Android ViewModel+liveData+lifecycle+databinding打造MVVM](https://juejin.im/post/5cabf2925188251b0b7a5baa)
+
 #### 2、单例
+
+#### 3、设计SDK考虑的事情
+
+[如何开发一个优秀的SDK](http://www.androidchina.net/7053.html)
+
+#### 4、build模式
+
+
 
 ### 十一、Java基础
 
-#### 1、Java：多线程知识（锁、线程池）
-
-#### 2、java内存模型
+#### 1、java内存模型
 
 [终于有人把Java内存模型说清楚了！](http://developer.51cto.com/art/201807/579744.htm)
 
-#### 3、JVM相关，如内存的管理、内存的回收
+#### 2、JVM相关，如内存的管理、内存的回收
 
 [Java之美从菜鸟到高手演变之JVM内存管理及垃圾回收](https://www.cnblogs.com/likehua/p/4023667.html)
 
 [深入理解JVM之Java内存管理](https://www.jianshu.com/p/e90b5121ff45)
 
-#### 4、类的的加载
+#### 3、类的的加载
 
 [超详细java中的ClassLoader详解](https://blog.csdn.net/briblue/article/details/54973413)
 
 [类加载机制系列2——深入理解Android中的类加载器](https://www.jianshu.com/p/7193600024e7)
 
-
-
-#### 5、垃圾回收算法
+#### 4、垃圾回收算法
 
 [Android(虚拟机)内存模型，垃圾回收机制是如何实现的？](https://www.jianshu.com/p/c871dd30ae8f)
+
+#### 5、集合、容器类
+
+List列表、Set集合、Map映射、工具类（Iterator迭代器、Enumeration枚举类、Arrays和Collections）
+
+#### 6、容器实现原理
+
+* HashTable实现原理
+* HashSet
+* TreeMap
+* HashSet与HashMap怎么判断集合元素重复
+
+##### 7、泛型
+
+[聊聊Java泛型擦除那些事](https://zhuanlan.zhihu.com/p/64583822)
+
+[泛型的意义和作用是啥？](https://www.jianshu.com/p/5179ede4c4cf)
 
 ### 十二、算法积累
 
 * 链表翻转
-
 * 快速排序
-
 * 二分查找
 
-* 二叉树遍历
+* 二叉树的深度优先遍历和广度优先遍历的具体实现
 
-1. 常用数据结构简介
-2. 并发集合了解哪些？
-3. 列举java的集合以及集合之间的继承关系
-4. 集合类以及集合框架
-5. 容器类介绍以及之间的区别（容器类估计很多人没听这个词，Java容器主要可以划分为4个部分：List列表、Set集合、Map映射、工具类（Iterator迭代器、Enumeration枚举类、Arrays和Collections），具体的可以看看这篇博文 Java容器类）
-6. List,Set,Map的区别
-7. List和Map的实现方式以及存储方式
-8. HashMap的实现原理
-9. HashMap数据结构？
-10. HashMap源码理解
-11. HashMap如何put数据（从HashMap源码角度讲解）？
-12. HashMap怎么手写实现？
-13. ConcurrentHashMap的实现原理
-14. ArrayMap和HashMap的对比
-15. HashTable实现原理
-16. TreeMap具体实现
-17. HashMap和HashTable的区别
-18. HashMap与HashSet的区别
-19. HashSet与HashMap怎么判断集合元素重复？
-20. 集合Set实现Hash怎么防止碰撞
-21. ArrayList和LinkedList的区别，以及应用场景
-22. 数组和链表的区别
-23. 二叉树的深度优先遍历和广度优先遍历的具体实现
-24. 堆的结构
-25. 堆和树的区别
-26. 堆和栈在内存中的区别是什么(解答提示：可以从数据结构方面以及实际实现方面两个方面去回答)？
-27. 什么是深拷贝和浅拷贝
-28. 手写链表逆序代码
-29. 讲一下对树，B+树的理解
-30. 讲一下对图的理解
-31. 判断单链表成环与否？
-32. 链表翻转（即：翻转一个单项链表）
-33. 合并多个单有序链表（假设都是递增的）
+* 链表逆序代码
 
+* 翻转一个单项链表
 
+* 合并多个单有序链表（假设都是递增的）
+
+* 判断单链表成环与否
+
+* TopK问题
+
+  
 
