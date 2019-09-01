@@ -16,7 +16,29 @@ tags:
 
 ### 〇、基础组件
 
-#### 1、Activity　
+#### 1、对Zygote的理解（作用、工作流程、工作原理）
+
+#### 2、Android系统启动流程 (系统进程，各个进程启动流程、启动后做什么)
+
+  要点：zygote、systemServer、系统服务
+
+* 系统服务跑在什么线程（DisplayThread, FgThread, IoThread,UiThread, binder线程）
+
+* 为什么系统服务不都跑在binder线程里
+
+* 为什么系统服务部都跑在自己私有的工作线程里
+
+* 跑在binder线程和跑在工作线程，如何取舍
+
+* 怎么解决系统服务启动的相互依赖
+
+  1、分批（AMS PMS PKMS）
+
+  2、分阶段启动
+
+* 桌面启动（看做一个系统应用）
+
+#### 3、Activity　
 
 - Activity生命周期
 
