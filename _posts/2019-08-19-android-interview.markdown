@@ -10,36 +10,23 @@ tags:
     - 基础
 ---
 
-> Android
+## Android总结
 
 [面试题汇总](https://www.cnblogs.com/lfs2640666960/p/9707141.html)
 
-### 〇、基础组件
+### 一、Android基础组件
 
-#### 1、对Zygote的理解（作用、工作流程、工作原理）
+#### 1、启动流程
 
-#### 2、Android系统启动流程 (系统进程，各个进程启动流程、启动后做什么)
+[Android启动流程init启动](https://jsonchao.github.io/2019/02/18/Android系统启动流程之init进程启动/)
 
-  要点：zygote、systemServer、系统服务
+[系统启动流程](https://www.jianshu.com/p/657336b545bd)
 
-* 系统服务跑在什么线程（DisplayThread, FgThread, IoThread,UiThread, binder线程）
+[App启动流程](https://blog.csdn.net/oheg2010/article/details/82826415)
 
-* 为什么系统服务不都跑在binder线程里
+[Android APK安装过程源码解析](https://blog.csdn.net/c10WTiybQ1Ye3/article/details/78098471)
 
-* 为什么系统服务部都跑在自己私有的工作线程里
-
-* 跑在binder线程和跑在工作线程，如何取舍
-
-* 怎么解决系统服务启动的相互依赖
-
-  1、分批（AMS PMS PKMS）
-
-  2、分阶段启动
-
-* 桌面启动（看做一个系统应用）
-
-#### 3、Activity　
-
+#### 2、Activity　
 - Activity生命周期
 
   https://juejin.im/post/5c90e7c36fb9a0711103cc46
@@ -60,7 +47,7 @@ tags:
 
   [App 竟然是这样跑起来的](https://juejin.im/post/5c4180566fb9a049a62cdfd7)
 
-#### 2、Fragment
+#### 3、Fragment
 
 - Fragment的生命周期
 
@@ -80,7 +67,7 @@ tags:
 
   。。。
 
-#### 3、Service
+#### 4、Service
 
 * 什么是Service，和Thread的区别
 
@@ -98,23 +85,25 @@ tags:
 
   [Android Broadcast广播机制分析](http://gityuan.com/2016/06/04/broadcast-receiver/)
 
-### 一、进程
+### 二、进程
 
 #### 1、Binder机制
 
+[Binder学习指南](https://cloud.tencent.com/developer/article/1329601)
+
 [3分钟带你看懂android的Binder机制](https://juejin.im/post/5c444a67f265da612c5e29e1)
 
-[Android Binder机制原理（史上最强理解，没有之一）](https://blog.csdn.net/boyupeng/article/details/47011383)
-
 [写给 Android 应用工程师的 Binder 原理剖析](https://zhuanlan.zhihu.com/p/35519585)
-
-[Binder学习指南](https://cloud.tencent.com/developer/article/1329601)
 
 #### 2、其他进程通信机制
 
 [几种进程通信方式的对比总结](https://blog.csdn.net/u011240877/article/details/72863432)
 
-### 二、线程
+### 3、进程优先级算法
+
+[解读Android进程优先级ADJ算法](http://gityuan.com/2018/05/19/android-process-adj/)
+
+### 三、线程
 
 #### 1、 Android线程通信(Handler 机制)
 
@@ -162,7 +151,7 @@ tags:
 
 ConcurrentHashMap的实现原理
 
-### 三、内存&优化
+### 四、内存&优化
 
 #### 1、LRUCache
 
@@ -208,7 +197,7 @@ ConcurrentHashMap的实现原理
 
 [理解Android Java垃圾回收机制](https://blog.csdn.net/omnispace/article/details/50991489)
 
-### 四、图片加载
+### 五、图片加载
 
 #### 1、Glide
 
@@ -224,9 +213,11 @@ ConcurrentHashMap的实现原理
 
 [让你彻底了解 bitmap 高效加载](https://juejin.im/entry/5937995aa22b9d00580f7891)
 
-### 五、网络请求 
+### 六、网络请求 
 
 #### 1、HTTP（S）、TCP、UDP协议
+
+[HTTP协议详解，真的很经典](https://www.cnblogs.com/li0803/archive/2008/11/03/1324746.html)
 
 [tcp、http指南](https://juejin.im/post/5ad4094e6fb9a028d7011069)
 
@@ -282,7 +273,7 @@ https://www.zybuluo.com/Dukebf/note/856502
 
 [浅谈常见的七种加密算法及实现](https://juejin.im/post/5b48b0d7e51d4519962ea383#heading-19)
 
-### 六、存储
+### 七、存储
 
 #### 1、sqlite数据库
 
@@ -296,7 +287,7 @@ https://www.zybuluo.com/Dukebf/note/856502
 
 [DiskLruCache完全解析，硬盘缓存的最佳方案](https://blog.csdn.net/guolin_blog/article/details/28863651)
 
-### 七、View相关
+### 八、View相关
 
 #### 1、View绘制流程
 
@@ -334,7 +325,7 @@ https://www.zybuluo.com/Dukebf/note/856502
 
 [【进阶】RecyclerView源码解析 5篇](https://www.jianshu.com/p/c52b947fe064)
 
-### 八、热门技术
+### 九、热门技术
 
 #### 1、插件化 原理
 
@@ -354,13 +345,13 @@ https://www.zybuluo.com/Dukebf/note/856502
 
 #### 4、RxJava
 
-### 九、应用内通信组件
+### 十、应用内通信组件
 
 #### 1、EventBus
 
 #### 2、模块化、组件化
 
-### 十、设计
+### 十一、设计
 
 #### 0、uml
 
@@ -380,11 +371,15 @@ https://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html
 
 [如何开发一个优秀的SDK](http://www.androidchina.net/7053.html)
 
-#### 4、build模式
+#### 4、设计模式
 
+[学习并理解 23 种设计模式](https://github.com/xietao3/Study-Plan/blob/master/DesignPatterns/README.md)
 
+[精讲版本](http://c.biancheng.net/view/1317.html)
 
-### 十一、Java基础
+[秒懂系列](https://blog.csdn.net/ShuSheng0007)
+
+### 十二、Java基础
 
 #### 1、java内存模型
 
@@ -423,7 +418,7 @@ List列表、Set集合、Map映射、工具类（Iterator迭代器、Enumeration
 
 [泛型的意义和作用是啥？](https://www.jianshu.com/p/5179ede4c4cf)
 
-### 十二、算法积累
+### 十三、算法积累
 
 * 链表翻转
 * 快速排序
